@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-import { Provider } from 'react-redux'
 import ReduxStore from './core/ReduxStore/ReduxStore'
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Provider } from 'react-redux'
+
+import './index.css';
+
+import HomePage from './pages/home/HomePage';
+import ViewPage from './pages/view/ViewPage';
+
+import reportWebVitals from './reportWebVitals';
 
 import * as coreActions from './core/app/core/coreActions'
 
@@ -18,7 +22,16 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <Provider store={ReduxStore.store}>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<HomePage />} />
+        <Route
+          path="/view"
+          element={<ViewPage />} />
+      </Routes>
+    </BrowserRouter>
   </Provider>
 );
 
