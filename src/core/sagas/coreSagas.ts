@@ -7,7 +7,6 @@ import spotifySagas from './spotify/spotifySagas'
 import * as coreActions from '../app/core/coreActions'
 
 export function* handleStartApp() {
-
 }
 
 export default function* coreSagas() {

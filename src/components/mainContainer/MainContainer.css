@@ -11,6 +11,9 @@
   text-align: center;
   align-items: center;
   align-self: center;
+  box-shadow: 4px 10px 23px 0px rgba(51,50,50,0.75);
+  -webkit-box-shadow: 4px 10px 23px 0px rgba(51,50,50,0.75);
+  -moz-box-shadow: 4px 10px 23px 0px rgba(51,50,50,0.75);
 }
 
 .LoadingIndStyle {
