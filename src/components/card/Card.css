@@ -1,0 +1,35 @@
+.Card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    width: inherit;
+}
+.Card:hover {
+    background: #222222;
+}
+
+.imgStyle {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.CardFix {
+    width: inherit;
+}
+
+@media only screen and (max-width: 576px) {
+    .CardFix {
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .CardFix {
+        width: auto;
+    }
+}

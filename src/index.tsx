@@ -28,7 +28,7 @@ root.render(
           path="/"
           element={<HomePage />} />
         <Route
-          path="/view"
+          path="/view/:section/:index"
           element={<ViewPage />} />
       </Routes>
     </BrowserRouter>

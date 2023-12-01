@@ -1,0 +1,26 @@
+.MainPage{
+    margin: 0;
+    display: flex;
+    border: 1px solid black;
+    background: linear-gradient(rgba(16,16,16),transparent);
+    background-Color: #262626;
+    color: white;
+    justify-Content: center;
+    padding-Top: 5%;
+    height: 1000px;
+    overflow: hidden;
+    bottom: 0;
+    align-Items: center;
+}
+
+@media only screen and (max-width: 576px) {
+    .MainPage{
+        height: 1000px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .MainPage{
+        height: 1000px;
+    }
+}

@@ -1,0 +1,87 @@
+.songImage {
+    background-color: grey;
+}
+
+.BackgroundContainer {
+    margin: 0;
+    display: flex;
+    border: 1px solid black;
+    height: 100vw;
+    background: linear-gradient(rgba(16, 16, 16), transparent);
+    background-color: #262626;
+    color: white;
+    justify-content: center;
+}
+
+.imageSize {
+    min-width: 300px;
+    min-height: 300px;
+    object-fit: fill;
+}
+
+.TextContainer {
+    bottom: 0;
+    height: 300px;
+    width: 100vw;
+    background-color: #222222;
+    opacity: 0.95;
+    position: absolute;
+    left: 0;
+}
+
+.InnerTextContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.TitleStyle {
+    width: 100%;
+    color: white;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-weight: 500;
+    font-size: 70px;
+    word-break: normal;
+}
+
+.DescriptionStyle {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+
+.LinkStyle{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-Color: #1DB954;
+    color: white;
+    padding: 10px;
+    border-Radius: 5px;
+    cursor: pointer;
+    font-Weight: 600;
+    text-Decoration: none;
+}
+
+@media only screen and (max-width: 576px) {
+    .BackgroundContainer {
+        height: 1000px;
+    }
+    .imageSize {
+        min-width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .BackgroundContainer {
+        height: 1000px;
+    }
+    .imageSize {
+        min-width: auto;
+    }
+}
+

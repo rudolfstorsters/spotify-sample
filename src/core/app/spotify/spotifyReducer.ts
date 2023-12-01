@@ -25,6 +25,7 @@ export interface ArtistItem {
 export interface Artist {
   name: String;
   items: ArtistItem[];
+  images: SpotifyImage[];
 }
 
 export interface AlbumItem {
@@ -36,6 +37,7 @@ export interface AlbumItem {
 
 export interface Album {
   items: AlbumItem[];
+  name: String;
 }
 
 export interface TrackItem {
@@ -54,7 +56,9 @@ export interface Results {
   tracks: Track[]
 }
 
-interface SpotifyState {
+export type SearchItem = AlbumItem & TrackItem & ArtistItem;
+
+export interface SpotifyState {
   isLoading: Boolean,
   results?: Results
 }
